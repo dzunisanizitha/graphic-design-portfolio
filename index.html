@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphic Design Portfolio</title>
+  <style>
+    :root {
+      --primary: #ff3c78;
+      --secondary: #1e1e2f;
+      --accent: #fcd12a;
+      --light: #ffffff;
+      --dark: #0d0d0d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--light);
+    }
+
+    nav {
+      background: var(--dark);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border: 5px solid var(--accent);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about-container img {
+      width: 250px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .testimonials {
+      background-color: var(--dark);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .testimonial {
+      background-color: var(--secondary);
+      border-left: 5px solid var(--primary);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      background-color: var(--primary);
+      color: var(--dark);
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .software-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .software-icons img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .software-icons img:hover {
+      transform: scale(1.3);
+    }
+
+    footer {
+      background: var(--dark);
+      text-align: center;
+      color: var(--light);
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        gap: 1rem;
+      }
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Graphic Design Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Software Skills</a>
+    <a href="#marketing">Marketing Material</a>
+    <a href="#branding">Branding</a>
+    <a href="#outdoor">Outdoor Advertising</a>
+    <a href="#social">Social Media Ads</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.png" alt="my photo">
+      <div class="about-text">
+        <p>I am a qualified Marketing Professional with a Diploma in Marketing and specialized certifications in Social Media, Digital Marketing, SEO, and Graphic Design. I bring creative graphic solutions together with strategic marketing insights—ensuring every visual project drives brand value and customer engagement. Over the years, I’ve successfully collaborated with clients across diverse sectors—delivering branding and marketing materials that are not only visually compelling but strategically aligned with their business goals.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <p>Ready to elevate your brand with impactful design and marketing strategy? Let us create something remarkable together. Get in touch today!</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Software Skills</h2>
+    <div class="software-icons">
+      <img src="images/illustrator.png" alt="Adobe Illustrator" title="Adobe Illustrator" />
+      <img src="images/photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop" />
+      <img src="images/indesign.png" alt="Adobe InDesign" title="Adobe InDesign" />
+      <img src="images/filmora.png" alt="filmora" title="Filmora" />
+      
+    </div>
+  </section>
+
+  <section id="marketing">
+    <h2>Marketing Material</h2>
+    <div class="gallery">
+      <img src="images/flyer.jpg" alt="Flyer Design" />
+      <img src="images/flyer1.jpg" alt="Poster Design" />
+      <img src="images/bcard.jpg" alt="Business Card Design" />
+      <img src="images/brochure.jpg" alt="Brochure Design" />
+    </div>
+  </section>
+
+  <section id="branding">
+    <h2>Branding</h2>
+    <div class="gallery">
+      <img src="images/logo.jpg" alt="Logo Design" />
+      <img src="images/branding-lotion.jpg" alt="Product Branding" />
+      <img src="images/cooparate-branding.jpg" alt="Corporate Branding" />
+    </div>
+  </section>
+
+  <section id="outdoor">
+    <h2>Outdoor Advertising</h2>
+    <div class="gallery">
+      <img src="images/billboad2.jpg" alt="Billboard" />
+      <img src="images/rollupbanner.jpg" alt="Banner Display" />
+      <img src="images/Rollup-Mockup-(100-x-200).jpg" alt="Banner Display" />
+    </div>
+  </section>
+
+  <section id="social">
+    <h2>Social Media Ads</h2>
+    <div class="gallery">
+      <img src="images/sneaker.jpg" alt="Facebook Ad" />
+      <img src="images/social-media.jpg" alt="Instagram Ad" />
+      <img src="images/adss.jpg" alt="Instagram Ad" />
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p><strong>Thandi M. – Small Business Owner</strong></p>
+        <p>"Working with this designer transformed my brand! The flyers and logo they created exceeded my expectations. Professional, timely, and creative!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p><strong>James K. – Marketing Manager</strong></p>
+        <p>"A true talent! They handled our product branding and outdoor campaign with such attention to detail and originality. Highly recommended!"</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> dzunisanizitha6@gmail.com</p>
+      <p><strong>Phone:</strong> +27 71 265 7497</p>
+      <p><strong>Location:</strong> Johannesburg, South Africa</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dzunisani Zitha | Graphic Designer | All rights reserved.</p>
+  </footer>
+</body>
+</html>
